@@ -1,5 +1,5 @@
-@import url(../vendor/normalize.css);
-@import url(../vendor/fonts/fonts.css);
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
 
 /* Общие */
 
@@ -87,6 +87,10 @@ body {
 
 .plug__info {
   max-width: 342px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 .volvo {
