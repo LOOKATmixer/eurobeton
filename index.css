@@ -194,6 +194,10 @@ body {
     margin: 0 0 8px;
     max-width: 290px;
   }
+
+  .volvo {
+    bottom: -10px;
+  }
 }
 
 @media screen and (max-width: 370px) {
