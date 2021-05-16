@@ -58,17 +58,42 @@ body {
 }
 
 .header__list_item {
+  display: inline-block;
+  position: relative;
+
   cursor: pointer;
   color: #8e8e8e;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 17px;
-  transition: opacity 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-.header__list_item:hover {
-  opacity: 0.5;
+.header__list_item:hover::after {
+  max-width: 138px;
+  color: #000;
+  content: attr(data-title);
+  position: absolute;
+  left: 25%;
+  top: 220%;
+  z-index: 1;
+  background-image: url('./images/podskazka.png');
+  background-size: 100%;
+  box-sizing: border-box;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 24px;
+  width: 148px;
+  height: 89px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 25px 10px;
+
+  font-family: 'Golos';
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
 }
 
 /* Мэйн */
@@ -85,7 +110,7 @@ body {
 
   font-size: 72px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 86px;
   letter-spacing: 0em;
   text-align: left;
@@ -117,16 +142,28 @@ body {
 .contacts__list_item {
   color: #e7411b;
   margin-bottom: 10px;
-  transition: all 0.2s ease-in;
 }
 
-.contacts__list_item:hover {
-  transform: scale(1.1);
+.contacts__list_item:last-child {
+  margin-top: 28px;
+  transition: opacity 0.2s ease-in;
+}
+
+.contacts__list_item:last-child:hover {
+  opacity: 0.2;
 }
 
 .contacts__list_item-phone {
   color: #e7411b;
   text-decoration: none;
+}
+
+.contacts__list_item-email {
+  color: #e7411b;
+}
+
+.contacts__list_item-price {
+  color: #e7411b;
   font-weight: 700;
 }
 
@@ -137,7 +174,6 @@ body {
   left: 0%;
   max-width: 200%;
   margin: 0 auto;
-  overflow: hidden;
   z-index: -1;
 }
 
@@ -181,10 +217,12 @@ body {
     margin: 22px 0 0 40%;
   }
 
+  .contacts__list_item:last-child {
+    margin-top: 18px;
+  }
+
   .title {
     font-size: 42px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 50px;
 
     margin: 86px 0 36px 8px;
@@ -194,7 +232,6 @@ body {
     margin: 0 0 8px;
     max-width: 290px;
   }
-
 }
 
 @media screen and (max-width: 370px) {
@@ -206,11 +243,13 @@ body {
 
   .title {
     font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 50px;
 
     margin: 66px 0 36px 8px;
+  }
+
+  .contacts__list {
+    margin: 8px 0 0 40%;
   }
 
   .container__plug {
