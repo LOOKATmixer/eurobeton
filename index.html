@@ -11,18 +11,18 @@
 
 <body>
 
-<div class="container-desktop">
+<div class="container">
   <header class="header">
     <a href="#" class="link">
       <img src="./images/logo.svg" alt="Логотип" class="header__logo" />
     </a>
-    <nav class="header__menu">
+    <nav class="header__menu header__menu_main">
       <ul class="header__list">
-        <li class="header__list_item">калькулятор <br>стоимости</br></li>
-        <li data-title="Пока эти ссылки не активны. Мы ведь предупредили, что сайт в разработке, вы чего." class="header__list_item">помощник выбора <br>бетона</br></li>
+        <li class="header__list_item"><a href="./pages/calc.html" class="main__menu_item"> калькулятор <br>стоимости</br></a></li>
+        <li class="header__list_item">помощник выбора <br>бетона</br></li>
         <li data-title="Пока эти ссылки не активны. Мы ведь предупредили, что сайт в разработке, вы чего." class="header__list_item">цены и доставка</li>
         <li data-title="Пока эти ссылки не активны. Мы ведь предупредили, что сайт в разработке, вы чего." class="header__list_item">акции и статьи</li>
-        <li data-title="Пока эти ссылки не активны. Мы ведь предупредили, что сайт в разработке, вы чего." class="header__list_item">контакты</li>
+        <li class="header__list_item"><a href="./pages/contacts.html" class="main__menu_item">контакты</a></li>
         <li data-title="Пока эти ссылки не активны. Мы ведь предупредили, что сайт в разработке, вы чего." class="header__list_item">стать франчайзи</li>
       </ul>
     </nav>
@@ -30,13 +30,25 @@
   <div class="content">
     <h1 class="title"></h1>
     <div class="container__number">
-      <div class="main__number">233<span class="icon__info">i</span></div>
-
+      <div class="main__number">
+        <span class="j-main__number">233</span>
+        <div class="icon__info">i
+          <div class="icon__description">
+            Благодаря системам автоматизации и нашему софту, мы, например, можем показать
+            сколько машин бетона уже отгрузили.
+          </div>
+      </div>
+        <span class="main__text">Мы — Конкрид. Наши заводы производят бетон высокого качества по европейским стандартам. Мы используем на наших заводах современное оборудование
+          и системы автоматизации, а также разработали собственный софт для учета и организации производственных процессов.
+        </span>
     </div>
     <img src="./images/volvo.png" alt="бетономешалка" class="volvo">
   </div>
 </div>
 
+  <script src="./vendor/plugins/jquery/3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="./vendor/plugins/jquery/ui/jquery-ui.min.js"></script>
+  <script src="./vendor/plugins/jquery/ui/jquery-ui.touch-punch.min.js"></script>
   <script src="./index.js"></script>
 </body>
 

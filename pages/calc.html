@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>default title</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="telephone=no" name="format-detection">
+        <meta name="HandheldFriendly" content="true">
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="/css/mainl885v.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+        <meta property="og:title" content="#{data.title}">
+        <meta property="og:title" content="">
+        <meta property="og:url" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:width" content="500">
+        <meta property="og:image:height" content="300">
+        <meta property="twitter:description" content="">
+        <link rel="image_src" href="">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+    </head>
+
+    <body class="page">
+        <header class="header">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="Логотип компании" width="165" height="181">
+            </div>
+            <div class="header__wrapper">
+                <nav class="header__nav j-header__nav nav">
+                    <div class="nav__icon j-nav__icon"><span> </span><span> </span><span></span>
+                    </div>
+                    <div class="nav__items-wrapper j-nav__items-wrapper">
+                        <div class="nav__decoration"></div>
+                        <ul class="nav__items">
+                            <li> <a href="#!">Калькулятор стоимости</a>
+                            </li>
+                            <li> <a href="#!">Помощник выбора бетона</a>
+                            </li>
+                            <li> <a href="#!">Цены и доставка</a>
+                            </li>
+                            <li> <a href="#!">Акции и статьи</a>
+                            </li>
+                            <li> <a href="#!">Контакты</a>
+                            </li>
+                            <li> <a href="#!">Стать франчайзи     </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <section class="calc">
+                <div class="calc__wrapper">
+                    <h1 class="main-title">Калькулятор стоимости</h1>
+                    <h3 class="main-subtitle">Вы можете рассчитать стоимость бетона с помошью калькулятора. Если вы не уверены какой бетон вам нужен, выберите из списка что строите и мы подскажем какой материал вам нужен</h3>
+                    <div class="calc__block">
+                        <form class="form form--calc" action="">
+                            <div class="form__input-block form__input-area--calc">
+                                <div class="form__input-area">
+                                    <input class="form__input--calc j-form__input--calc" type="text" name="userBeton" readonly>
+                                    <svg class="svg-arrow" width="19" height="11" viewbox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.3125 1.375L9.5 9.1875L1.6875 1.375" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg><span class="form__input-placeholder">Марка бетона</span><span class="form__input-price">4 300 ₽</span>
+                                    <ul class="form__input-list j-form__input-list">
+                                        <li>
+                                            <label>М100 — 4300 ₽/м3
+                                                <input type="radio" name="typeBeton" value="m100">
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>М700 — 3200 ₽/м3
+                                                <input type="radio" name="typeBeton" value="m700">
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>A560 — 1300 ₽/м3
+                                                <input type="radio" name="typeBeton" value="a560">
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="form__input-area">
+                                    <input type="number" name="userSpace"><span class="form__input-placeholder">Объем, м3</span><span class="form__input-price">6 130 ₽</span>
+                                </div>
+                                <div class="form__input-area">
+                                    <svg class="svg-close" width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.5312 5.46875L5.46875 19.5312" stroke="#E7411B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M19.5312 19.5312L5.46875 5.46875" stroke="#E7411B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                    <input class="j-input-close" type="text" name="userAdress"><span class="form__input-placeholder">Район доставки</span><span class="form__input-price">12 200 ₽</span>
+                                </div>
+                            </div>
+                            <div class="form__price-block"> <span>общая стоимость</span><span class="form__price j-form__price">118 750 ₽</span>
+                            </div>
+                            <div class="form__button-block"> <span class="form__description">Цена рассчитана по прайсу. Дополнительную информацию о стоимости с учетом акций и скидок уточняйте в отделе продаж по телефону<a href="tel:+73452500301">+7 (3452) 500-301</a></span>
+                                <button class="btn btn--orange" type="submit">Отправить заявку</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="calc__answer">
+                        <h2 class="title">Почему мы?</h2>
+                        <div class="calc__answer-block">
+                            <h3 class="main-subtitle main-subtitle--wrap">Отгрузка сразу</h3>
+                            <p>Производительность завода составляет 100 м3/час, парк компании насчитывает 25 автобетоносмесителей, это позволяет нам отгружать бетон в день заказа.</p>
+                        </div>
+                        <div class="calc__answer-block">
+                            <h3 class="main-subtitle">24/7</h3>
+                            <p>Мы готовы отгружать бетон 24 часа в сутки и 7 дней в неделю, по предварительно оставленным заявкам в рабочее время.</p>
+                        </div>
+                        <div class="calc__answer-block">
+                            <h3 class="main-subtitle main-subtitle--wrap">Выезд специалиста</h3>
+                            <p>Вы можете бесплатно вызвать специалиста на объект.Он оценит подъездные пути для миксера, посмотрит площадку под автобетононасос, поможет рассчитать объем бетона и определит качество собранной опалубки.</p>
+                        </div>
+                        <div class="calc__answer-block">
+                            <h3 class="main-subtitle main-subtitle--wrap">Контроль качества</h3>
+                            <p>Собственная аттестованная лаборатория и квалифицированные специалисты, позволяют эффективно контролировать качество сырья и качество готовой продукции. Св-во №1856 от 30 апреля 2015 года.</p>
+                        </div>
+                        <div class="calc__answer-block">
+                            <h3 class="main-subtitle">Информирование</h3>
+                            <p>По средствам SMS сообщений, мы информируем Вас о дате, времени и стоимости заказа, а также в какое время и с каким объемом выехал автомобиль с производства, что позволяет Вам контролировать весь процесс укладки бетона, с момента
+                                заказа и до прибытия миксера на объект.</p>
+                        </div>
+                        <div class="calc__answer-block">
+                            <h3 class="main-subtitle main-subtitle--wrap">Точность в&nbspобъеме</h3>
+                            <p>Заказанный объем бетон, доставляется в полном соответствии с заказом, и при высоких показателях его качества. Можете быть уверены, мы доставим вам точное значение объема бетона.</p>
+                        </div>
+                    </div>
+                    <div class="quest__form">
+                        <h2 class="title">Остались вопросы?</h2><span class="quest__sub-text">Пишите, звоните, заходите на кофе. Мы всегда вам рады.</span>
+                        <form class="form" id="form" action="">
+                            <div class="form__input-block">
+                                <div class="form__input-area">
+                                    <input type="text" name="userName"><span class="form__input-placeholder">Имя</span>
+                                </div>
+                                <div class="form__input-area">
+                                    <input type="number" name="userPhone"><span class="form__input-placeholder">Телефон</span>
+                                </div>
+                                <div class="form__input-area form__input-area--textarea">
+                                    <div class="form__textarea">
+                                        <textarea name="userQuestion"></textarea><span class="form__input-placeholder">Вопрос</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__button-block">
+                                <button class="btn btn--orange" type="submit">Отправить</button><span class="form__description">Нажимая кнопку “отправить” вы подтверждаете, что ознакомлены и согласны с условиями<a href="#!">политики конфиденциальности</a></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <footer class="footer__wrapper">
+                <div class="footer__img">
+                    <img src="/images/volvo.png" alt="Volvo">
+                </div>
+            </footer>
+        </footer>
+
+
+        <script src="static/js/mainl885v.min.js"></script>
+    </body>
+
+</html>

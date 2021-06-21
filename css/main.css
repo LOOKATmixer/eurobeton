@@ -1,3 +1,5 @@
+
+
 .container-desktop {
   margin-left: 8%;
 }
@@ -145,8 +147,10 @@
 }
 
 .volvo {
+  display: flex;
+  flex: 0 0 auto;
   width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0%;
   left: 0%;
   max-width: 200%;
