@@ -16,7 +16,7 @@
     <a href="#" class="link">
       <img src="./images/logo.svg" alt="Логотип" class="header__logo" />
     </a>
-    <nav class="header__menu header__menu_main">
+    <nav class="desktop header__menu header__menu_main">
       <ul class="header__list">
         <li class="header__list_item"><a href="./pages/calc.html" class="main__menu_item"> калькулятор <br>стоимости</br></a></li>
         <li class="header__list_item">помощник выбора <br>бетона</br></li>
@@ -25,6 +25,27 @@
         <li class="header__list_item"><a href="./pages/contacts.html" class="main__menu_item">контакты</a></li>
         <li data-title="Пока эти ссылки не активны. Мы ведь предупредили, что сайт в разработке, вы чего." class="header__list_item">стать франчайзи</li>
       </ul>
+    </nav>
+    <nav class="mobile header__nav j-header__nav nav">
+      <div class="nav__icon j-nav__icon"><span> </span><span> </span><span></span>
+      </div>
+      <div class="nav__items-wrapper j-nav__items-wrapper">
+        <div class="nav__decoration"></div>
+        <ul class="nav__items">
+          <li> <a href="#!">Калькулятор стоимости</a>
+          </li>
+          <li> <a href="#!">Помощник выбора бетона</a>
+          </li>
+          <li> <a href="#!">Цены и доставка</a>
+          </li>
+          <li> <a href="#!">Акции и статьи</a>
+          </li>
+          <li> <a href="#!">Контакты</a>
+          </li>
+          <li> <a href="#!">Стать франчайзи     </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <div class="content">
@@ -49,7 +70,10 @@
   <script src="./vendor/plugins/jquery/3.6.0/jquery-3.6.0.min.js"></script>
   <script src="./vendor/plugins/jquery/ui/jquery-ui.min.js"></script>
   <script src="./vendor/plugins/jquery/ui/jquery-ui.touch-punch.min.js"></script>
-  <script src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/header.js"></script>
 </body>
 
 </html>

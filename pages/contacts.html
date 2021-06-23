@@ -12,7 +12,7 @@
         <meta name="HandheldFriendly" content="true">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mainl885v.min.css" rel="stylesheet" type="text/css">
+            <link href="../css/mainl885v.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -32,11 +32,21 @@
 
     <body class="page">
         <header class="header">
-            <div class="logo">
-                <img src="static/img/content/logo.jpg" alt="Логотип компании" width="165" height="181">
-            </div>
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.svg" alt="Логотип" class="header__logo" />
+            </a>
             <div class="header__wrapper">
-                <nav class="header__nav j-header__nav nav">
+                <nav class="desktop header__menu header__menu_main">
+                    <ul class="header__list">
+                        <li class="header__list_item"><a href="./calc.html" class="main__menu_item"> калькулятор <br>стоимости</br></a></li>
+                        <li class="header__list_item">помощник выбора <br>бетона</br></li>
+                        <li data-title="Пока эти ссылки не активны. Мы ведь предупредили, что сайт в разработке, вы чего." class="header__list_item">цены и доставка</li>
+                        <li data-title="Пока эти ссылки не активны. Мы ведь предупредили, что сайт в разработке, вы чего." class="header__list_item">акции и статьи</li>
+                        <li class="header__list_item"><a href="./contacts.html" class="main__menu_item">контакты</a></li>
+                        <li data-title="Пока эти ссылки не активны. Мы ведь предупредили, что сайт в разработке, вы чего." class="header__list_item">стать франчайзи</li>
+                    </ul>
+                </nav>
+                <nav class="mobile header__nav j-header__nav nav">
                     <div class="nav__icon j-nav__icon"><span> </span><span> </span><span></span>
                     </div>
                     <div class="nav__items-wrapper j-nav__items-wrapper">
@@ -69,25 +79,25 @@
                         </div>
                         <div class="contact__block"><a class="contact__link" href="tel:+73452500301">+7 (3452) 500-301</a><a class="contact__link" href="mailto:eurobeton72@mail.ru">eurobeton72@mail.ru</a>
                             <div class="contact__social"> <a class="contact__social-link contact__social-link--vk" href="#!">vk</a><a class="contact__social-link contact__social-link--inst" href="#!">inst </a>
-                            </div><span class="contact__sub-text"> Пн-Пт 8:00-17:00  </span>
+                            </div><span class="contact__sub-text"> Пн-Пт 8:00 - 17:00  </span>
                         </div>
                     </div>
                     <div class="contact__production-block">
                         <div class="contact__block">
                             <h2 class="title">Производство</h2>
                         </div>
-                        <div class="contact__block"><a class="contact__link" href="tel:+73452500401">+7 (3452) 500-401</a><span class="contact__sub-text">Пн-Пт 8:00-22:00</span>
+                        <div class="contact__block"><a class="contact__link" href="tel:+73452500401">+7 (3452) 500-401</a><span class="contact__sub-text">Пн-Пт 8:00 - 22:00</span>
                         </div>
                     </div>
                     <div class="quest__form">
                         <h2 class="title">Остались вопросы?</h2><span class="quest__sub-text">Пишите, звоните, заходите на кофе. Мы всегда вам рады.</span>
-                        <form class="form" id="form" action="">
+                        <form id="formContact" class="form" action="">
                             <div class="form__input-block">
                                 <div class="form__input-area">
                                     <input type="text" name="userName"><span class="form__input-placeholder">Имя</span>
                                 </div>
                                 <div class="form__input-area">
-                                    <input type="number" name="userPhone"><span class="form__input-placeholder">Телефон</span>
+                                    <input id="phone" name="userPhone"><span class="form__input-placeholder">Телефон</span>
                                 </div>
                                 <div class="form__input-area form__input-area--textarea">
                                     <div class="form__textarea">
@@ -96,7 +106,7 @@
                                 </div>
                             </div>
                             <div class="form__button-block">
-                                <button class="btn btn--orange" type="submit">Отправить</button><span class="form__description">Нажимая кнопку “отправить” вы подтверждаете, что ознакомлены и согласны с условиями<a href="#!">политики конфиденциальности</a></span>
+                                <button class="btn btn--orange btn-hover" type="submit">Отправить</button><span class="form__description">Нажимая кнопку “отправить” вы подтверждаете, что ознакомлены и согласны с условиями<a href="#!">политики конфиденциальности</a></span>
                             </div>
                         </form>
                     </div>
@@ -106,13 +116,16 @@
         <footer class="footer">
             <footer class="footer__wrapper">
                 <div class="footer__img">
-                    <img src="static/img/content/car.png" alt="Volvo">
+                    <img src="../images/volvo.png" alt="Volvo">
                 </div>
             </footer>
         </footer>
 
-
-        <script src="static/js/mainl885v.min.js"></script>
+        <script src="../vendor/plugins/jquery/3.6.0/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+        <script src="../vendor/plugins/jquery/ui/jquery-ui.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+        <script src="../js/header.js"></script>
     </body>
 
 </html>
