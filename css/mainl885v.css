@@ -546,6 +546,7 @@ label.error {
 
 .calc__wrapper {
   width: 100%;
+  margin-top: 150px;
   padding-left: 24px;
   padding-right: 24px;
   -webkit-box-sizing: border-box;
@@ -841,7 +842,7 @@ label.error {
 @media (min-width: 1025px) {
   .calc__wrapper {
     max-width: 824px;
-    margin: 0 auto;
+    margin: 150px auto 0;
     padding: 0 12px;
   }
   .form--calc .form__description {
@@ -962,6 +963,7 @@ label.error {
 
 .contact__wrapper {
   width: 100%;
+  margin-top: 150px;
   padding-left: 24px;
   padding-right: 24px;
   -webkit-box-sizing: border-box;
@@ -1325,7 +1327,7 @@ label.error {
 @media (min-width: 1025px) {
   .contact__wrapper {
     max-width: 824px;
-    margin: 0 auto;
+    margin: 150px auto 0;
     padding: 0 12px;
   }
   .form__description--desc {
@@ -1342,8 +1344,9 @@ label.error {
     margin-bottom: 15px;
   }
   .contact .main-title {
-    font-weight: 600;
-    font-size: 123px;
+    font-weight: 500;
+    ont-size: 124px;
+    line-height: 130px;
   }
   .form__input-area {
     margin-bottom: 8px;
@@ -1472,11 +1475,6 @@ label.error {
      object-fit: cover;
 }
 
-.header {
-  height: 110px;
-  margin-bottom: 44px;
-  margin: 0 auto;
-}
 
 /*#LOGO*/
 .logo {
@@ -1495,10 +1493,6 @@ label.error {
 }
 
 @media (min-width: 768px) {
-  .header {
-    height: 154px;
-    margin-bottom: 50px;
-  }
   .logo {
     width: 141px;
     height: 154px;
@@ -1507,10 +1501,6 @@ label.error {
 
 
 @media (min-width: 1025px) {
-  .header {
-    height: 174px;
-    margin-bottom: 0;
-  }
   .logo {
     width: 165px;
     height: 181px;
@@ -1520,7 +1510,7 @@ label.error {
 /*#LOGO-END*/
 /*#NAV*/
 .nav {
-  position: relative;
+  /*position: relative;*/
 }
 
 .nav__icon {
@@ -1664,10 +1654,6 @@ label.error {
   }
 }
 
-.header__menu {
-  padding: 40px 120px 85px 15%;
-}
-
 .header__list {
   display: flex;
   justify-content: space-between;
@@ -1724,12 +1710,7 @@ a {
 
 .main__menu_item:hover {
   color: #E7411B;
-}
-
-@media screen and (max-width: 1140px) {
-  .header__menu {
-    margin: 40px 10px 85px 12%;
-  }
+  font-weight: 500;
 }
 
 @media screen and (max-width: 1023px) {

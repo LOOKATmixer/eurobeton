@@ -10,8 +10,6 @@
 </head>
 
 <body>
-
-<div class="container">
   <header class="header">
     <a href="#" class="link">
       <img src="./images/logo.svg" alt="Логотип" class="header__logo" />
@@ -20,10 +18,10 @@
       <ul class="header__list">
         <li class="header__list_item"><a href="./pages/calc.html" class="main__menu_item"> калькулятор <br>стоимости</br></a></li>
         <li class="header__list_item">помощник выбора <br>бетона</br></li>
-        <li data-title="Пока эти ссылки не активны. Мы ведь предупредили, что сайт в разработке, вы чего." class="header__list_item">цены и доставка</li>
+        <li class="header__list_item"><a href="./pages/price.html" class="main__menu_item">цены и доставка</a></li>
         <li data-title="Пока эти ссылки не активны. Мы ведь предупредили, что сайт в разработке, вы чего." class="header__list_item">акции и статьи</li>
         <li class="header__list_item"><a href="./pages/contacts.html" class="main__menu_item">контакты</a></li>
-        <li data-title="Пока эти ссылки не активны. Мы ведь предупредили, что сайт в разработке, вы чего." class="header__list_item">стать франчайзи</li>
+        <li class="header__list_item"><a href="./pages/gallery.html" class="main__menu_item">галерея</a></li>
       </ul>
     </nav>
     <nav class="mobile header__nav j-header__nav nav">
@@ -32,44 +30,48 @@
       <div class="nav__items-wrapper j-nav__items-wrapper">
         <div class="nav__decoration"></div>
         <ul class="nav__items">
-          <li> <a href="#!">Калькулятор стоимости</a>
+          <li> <a href="./pages/calc.html" class="main__menu_item">Калькулятор стоимости</a>
           </li>
           <li> <a href="#!">Помощник выбора бетона</a>
           </li>
-          <li> <a href="#!">Цены и доставка</a>
+          <li> <a href="./pages/price.html" class="main__menu_item">Цены и доставка</a>
           </li>
           <li> <a href="#!">Акции и статьи</a>
           </li>
-          <li> <a href="#!">Контакты</a>
+          <li> <a href="./pages/contacts.html" class="main__menu_item">контакты</a>
           </li>
-          <li> <a href="#!">Стать франчайзи     </a>
+          <li><a href="./pages/gallery.html" class="main__menu_item">галерея</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <div class="content">
-    <h1 class="title"></h1>
-    <div class="container__number">
-      <div class="main__number">
-        <span class="j-main__number">233</span>
+  <div class="container">
+    <div class="content">
+      <h1 class="title__main"></h1>
+      <div class="container__number">
         <div class="icon__info">i
           <div class="icon__description">
             Благодаря системам автоматизации и нашему софту, мы, например, можем показать
             сколько машин бетона уже отгрузили.
           </div>
+        </div>
+        <div class="main__number">
+          <span class="j-main__number">233</span>
+          <span class="main__text">Мы — Конкрид. Наши заводы производят бетон высокого качества по европейским стандартам. Мы используем на наших заводах современное оборудование
+            и системы автоматизации, а также разработали собственный софт для учета и организации производственных процессов.
+          </span>
       </div>
-        <span class="main__text">Мы — Конкрид. Наши заводы производят бетон высокого качества по европейским стандартам. Мы используем на наших заводах современное оборудование
-          и системы автоматизации, а также разработали собственный софт для учета и организации производственных процессов.
-        </span>
+      </div>
     </div>
-    <img src="./images/volvo.png" alt="бетономешалка" class="volvo">
   </div>
-</div>
+  <img src="./images/volvo.png" alt="бетономешалка" class="volvo">
+
 
   <script src="./vendor/plugins/jquery/3.6.0/jquery-3.6.0.min.js"></script>
   <script src="./vendor/plugins/jquery/ui/jquery-ui.min.js"></script>
   <script src="./vendor/plugins/jquery/ui/jquery-ui.touch-punch.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>

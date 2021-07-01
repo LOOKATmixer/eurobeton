@@ -26,14 +26,6 @@ a {
 .mobile {
   display: none;
 }
-@media screen and (max-width: 1023px) {
-  .desktop {
-    display: none;
-  }
-  .mobile {
-    display: block;
-  }
-}
 
 .main__menu_item {
   color: #8e8e8e;
@@ -42,6 +34,7 @@ a {
 
 .main__menu_item:hover {
   color: #E7411B;
+  font-weight: 500;
 }
 
 .container {
@@ -53,6 +46,7 @@ a {
 }
 
 .container__number {
+  position: relative;
   margin: 0px 120px 85px 15%;
 }
 
@@ -72,7 +66,9 @@ a {
 }
 
 .icon__info {
+  color: #E7411B;
   backdrop-filter: blur(5px);
+  border-radius: 50px;
   position: absolute;
   top: 15%;
   left: 0;
@@ -91,11 +87,14 @@ a {
 
 .icon__description {
   display: none;
-  max-width: 320px;
-
+  position: absolute;
+  top: 305px;
+  left: 14px;
+  text-align: left;
+  width: 326px !important;
   font-size: 14px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 17px;
 }
 
@@ -121,7 +120,7 @@ a {
 /*#LOGO-END*/
 /*#NAV*/
 .nav {
-  position: relative;
+  /*position: relative;*/
 }
 
 .nav__icon {
@@ -166,8 +165,8 @@ a {
   width: 100%;
   height: 100%;
   position: absolute;
-  left: -16px;
-  top: 16px;
+  left: 0px;
+  top: 0px;
   background-color: rgba(255, 255, 255, 0.4);
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
@@ -251,7 +250,7 @@ a {
   }
 }
 
-@media screen and (max-height: 899px) {
+@media (min-width: 1024px) and (max-height: 899px) {
   .volvo {
     bottom: -15%;
   }
@@ -289,5 +288,77 @@ a {
     font-size: 14px;
     line-height: 17px;
     font-weight: 400;
+  }
+
+  .icon__info {
+    left: 79px;
+  }
+
+  .icon__description {
+    top: -58px;
+    left: 69px;
+  }
+}
+
+
+@media screen and (max-width: 1250px) {
+  .icon__info {
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .icon__info {
+    left: 24px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .icon__info {
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .container__number {
+    margin: 160px 120px 85px 15%;
+  }
+}
+
+@media screen and (max-width: 695px) {
+  .container {
+    margin-left: 5%;
+  }
+
+  .main__number {
+    font-size: 180px;
+    line-height: 216px;
+    max-width: 320px;
+  }
+
+  .container__number {
+    margin: 180px 120px 85px 0%;
+  }
+
+  .main__text {
+    width: 290px;
+    top: 168px;
+    right: 0 !important;
+    padding: 24px;
+  }
+
+  .icon__info {
+    left: -21px;
+  }
+
+  .icon__description {
+    top: -58px;
+    left: 26px;
   }
 }
