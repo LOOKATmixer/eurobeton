@@ -1387,6 +1387,7 @@ label.error {
     margin-bottom: 20px;
   }
   .contact__text {
+    max-width: 344px;
     margin-bottom: 0;
   }
   .contact__production-block {

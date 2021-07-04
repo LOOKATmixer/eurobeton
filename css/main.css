@@ -135,7 +135,7 @@
 }
 
 .contacts__list_item-price {
-  color: #e7411b;
+  color: #e7411b !important;
   font-weight: 700;
 }
 
