@@ -28,6 +28,7 @@ body {
 }
 
 .gallery__wrapper .main-title {
+    font-weight: 500;
     margin-bottom: 44px;
 }
 
