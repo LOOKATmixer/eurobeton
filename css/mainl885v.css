@@ -964,6 +964,7 @@ label.error {
 .contact__wrapper {
   width: 100%;
   margin-top: 150px;
+  padding-top: 44px;
   padding-left: 24px;
   padding-right: 24px;
   -webkit-box-sizing: border-box;
