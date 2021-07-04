@@ -1572,7 +1572,7 @@ label.error {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 40px 24px 24px;
+  padding: 170px 24px 24px;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1602,11 +1602,10 @@ label.error {
   text-decoration: none;
   -webkit-transition: color .2s ease-in;
   transition: color .2s ease-in;
-  font-family: Golos, Helvetica, sans-serif;
+  font-size: 32px;
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
+  font-weight: 400;
+  line-height: 38px;
 }
 
 .nav__items a:hover {
@@ -1656,7 +1655,7 @@ label.error {
 
 .header__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
   padding: 0;
   margin: 0;

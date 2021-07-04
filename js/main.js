@@ -10,3 +10,6 @@ $(document).ready(function() {
         });
     });
 });
+
+fetch('https://eurobeton.katren.org')
+    .then(res => console.log(res))

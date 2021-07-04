@@ -82,11 +82,12 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 43px;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s linear;
 }
 
-.icon__description {
-  display: none;
+.icon__info > .icon__description {
+  visibility: hidden;
+  opacity: 0;
   position: absolute;
   top: 305px;
   left: 14px;
@@ -96,10 +97,18 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: 17px;
+  transition: visibility 0s, opacity 0.5s linear;
 }
 
-.icon__info:hover .icon__description {
-  display: block;
+.icon__info:hover > .icon__description {
+  visibility: visible;
+  opacity: 1;
+  color: #E7411B;
+}
+
+.icon__info:hover {
+  background-color: #E7411B;
+  color: #e5e5e5;
 }
 
 .main__text {
@@ -182,7 +191,7 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 40px 24px 24px;
+  padding: 170px 24px 24px;
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -212,11 +221,10 @@ a {
   text-decoration: none;
   -webkit-transition: color .2s ease-in;
   transition: color .2s ease-in;
-  font-family: Golos, Helvetica, sans-serif;
+  font-size: 32px;
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
+  font-weight: 400;
+  line-height: 38px;
 }
 
 .nav__items a:hover {
@@ -295,7 +303,7 @@ a {
   }
 
   .icon__description {
-    top: -58px;
+    top: -58px !important;
     left: 69px;
   }
 }
