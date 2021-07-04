@@ -687,7 +687,7 @@ label.error {
 .form__price-block .form__price {
   font-family: Golos, Helvetica, sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 64px;
   line-height: 77px;
   white-space: nowrap;
@@ -842,7 +842,7 @@ label.error {
 @media (min-width: 1025px) {
   .calc__wrapper {
     max-width: 824px;
-    margin: 150px auto 0;
+    margin: 110px auto 0;
     padding: 0 12px;
   }
   .form--calc .form__description {
@@ -853,7 +853,7 @@ label.error {
     top: 105px;
   }
   .calc__wrapper .main-title {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 122px;
     line-height: 130px;
     margin-bottom: 32px;
@@ -1327,7 +1327,7 @@ label.error {
 @media (min-width: 1025px) {
   .contact__wrapper {
     max-width: 824px;
-    margin: 150px auto 0;
+    margin: 110px auto 0;
     padding: 0 12px;
   }
   .form__description--desc {
@@ -1400,7 +1400,7 @@ label.error {
             justify-content: space-between;
   }
   .contact__production-block .contact__sub-text {
-    display: none;
+    margin-top: 16px;
   }
   .contact__production-block .contact__link {
     margin-bottom: 0;
@@ -1682,7 +1682,6 @@ label.error {
   left: 25%;
   top: 220%;
   z-index: 1;
-  background-image: url('./images/podskazka.png');
   background-size: 100%;
   box-sizing: border-box;
   width: 148px;

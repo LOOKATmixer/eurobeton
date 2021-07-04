@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Контакты</title>
+        <title>default title</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +12,10 @@
         <meta name="HandheldFriendly" content="true">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="../css/common.css" rel="stylesheet" type="text/css">
         <link href="../css/mainl885v.css" rel="stylesheet" type="text/css">
         <link href="../index.css" rel="stylesheet" type="text/css">
+        <link href="../css/common.css" rel="stylesheet" type="text/css">
+        <link href="../css/detail.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -70,34 +71,37 @@
         </nav>
     </header>
         <main class="main">
-            <section class="contact">
-                <div class="contact__wrapper">
-                    <h1 class="main-title">Контакты</h1>
-                    <div class="contact__adress-block">
-                        <div class="contact__block">
-                            <h2 class="title">Офис</h2><span class="contact__text contact__text--adress">г. Тюмень, ул. Червишевский тракт 37, 3 этаж, офис 313</span>
+            <section class="article">
+                <img class="article__background" src="../images/cover.jpg" alt="Фотография специалистов">
+                <div class="article__wrapper">
+                    <h1 class="main-title">Памятка клиенту при заказе бетона</h1>
+                    <div class="article__text">
+                        <p>При строительстве дома, особое значение занимает выбор фундамента для будущего дома. От этого будут зависеть его эксплуатационные характеристики.</p>
+                        <p>На проблемных, <a href="#!">подвижных почвах </a>лучше всего использовать свайный фундамент, который конструктивно состоит из свай. Минуя слабонесущие почвы, сваи на большой глубине достигают более плотных её слоев, на которые и
+                            опираются. Изготавливать их можно на стройплощадке или на заводе.</p>
+                        <p>Конструктивно свайный фундамент – это так называемое «свайное поле», состоящее из винтовых свай. Их соединяют между собой через ростверк в один или несколько слоев поперечин. Жесткость фундамента подбирают в зависимости от грунта
+                            и веса будущей конструкции.</p>
+                        <div class="article__list">
+                            <h2 class="main-title">Преимущества и виды свайных фундаментов</h2>
+                            <ul>
+                                <li>Быстрый и легкий монтаж;</li>
+                                <li>Отсутствие потребности в использовании спецтехники или посторонней помощи;</li>
+                                <li>большой показатель экономического эффекта (особенно наряду со столбчатым и ленточным фундаментами);</li>
+                                <li>Нет зависимости от времени года;</li>
+                                <li>Существенно низкий объем земляных работ.</li>
+                            </ul>
                         </div>
-                        <div class="contact__block"><a class="contact__link" href="tel:+73452500301">+7 (3452) 500-301</a><a class="contact__link" href="mailto:eurobeton72@mail.ru">eurobeton72@mail.ru</a>
-                            <div class="contact__social"> <a class="contact__social-link contact__social-link--vk" target="_blank" href="https://vk.com/konkrid72">vk</a><a class="contact__social-link contact__social-link--inst" href="#!">inst </a>
-                            </div><span class="contact__sub-text"> Пн-Пт 8:00 - 17:00  </span>
-                        </div>
-                    </div>
-                    <div class="contact__production-block">
-                        <div class="contact__block">
-                            <h2 class="title">Производство</h2>
-                        </div>
-                        <div class="contact__block"><a class="contact__link" href="tel:+73452500401">+7 (3452) 500-401</a><span class="contact__sub-text">Пн-Вс 8:00 - 22:00</span>
-                        </div>
+                        <div class="article__date">14.09.2020</div>
                     </div>
                     <div class="quest__form">
                         <h2 class="title">Остались вопросы?</h2><span class="quest__sub-text">Пишите, звоните, заходите на кофе. Мы всегда вам рады.</span>
-                        <form id="formContact" class="form" action="">
+                        <form class="form" id="form" action="">
                             <div class="form__input-block">
                                 <div class="form__input-area">
                                     <input type="text" name="userName"><span class="form__input-placeholder">Имя</span>
                                 </div>
                                 <div class="form__input-area">
-                                    <input id="phone" name="userPhone"><span class="form__input-placeholder">Телефон</span>
+                                    <input name="userPhone" id="phone"><span class="form__input-placeholder">Телефон</span>
                                 </div>
                                 <div class="form__input-area form__input-area--textarea">
                                     <div class="form__textarea">
@@ -106,26 +110,27 @@
                                 </div>
                             </div>
                             <div class="form__button-block">
-                                <button class="btn btn--orange btn-hover" type="submit">Отправить</button><span class="form__description">Нажимая кнопку “отправить” вы подтверждаете, что ознакомлены и согласны с условиями<a href="#!">политики конфиденциальности</a></span>
+                                <button class="btn btn--orange" type="submit">Отправить</button><span class="form__description">Нажимая кнопку “отправить” вы подтверждаете, что ознакомлены и согласны с условиями<a href="#!">политики конфиденциальности</a></span>
                             </div>
                         </form>
                     </div>
                 </div>
             </section>
         </main>
-        <footer class="footer">
-            <footer class="footer__wrapper">
-                <div class="footer__img">
-                    <img src="../images/volvo.png" alt="Volvo">
-                </div>
-            </footer>
-        </footer>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__img">
+                <img src="../images/volvo.png" alt="Volvo">
+            </div>
+        </div>
+    </footer>
 
-        <script src="../vendor/plugins/jquery/3.6.0/jquery-3.6.0.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
-        <script src="../vendor/plugins/jquery/ui/jquery-ui.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
-        <script src="../js/header.js"></script>
+
+    <script src="../vendor/plugins/jquery/3.6.0/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script src="../vendor/plugins/jquery/ui/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="../js/header.js"></script>
     </body>
 
 </html>

@@ -33,7 +33,7 @@ body {
 @media (min-width: 1025px) {
     .gallery__wrapper {
         max-width: 824px;
-        margin: 150px auto 0;
+        margin: 110px auto 0;
         padding: 0 12px;
     }
 }

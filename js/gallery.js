@@ -1,3 +1,5 @@
+$(document).ready(function () {
+
 if ($('.data__container').length != 0) {
     $('.data__container').slick({
         variableWidth: true,
@@ -25,7 +27,9 @@ if ($('.images__container').length != 0) {
     });
 }
 
-lightGallery(document.getElementById('lightgallery'), {
-    speed: 500,
+    /* lightgallery */
+
+    $('#lg').lightGallery();
+    $('#lg1').lightGallery();
 
 });

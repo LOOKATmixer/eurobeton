@@ -1,0 +1,287 @@
+.kviz__wrapper {
+    margin-top: 150px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  
+  .kviz__wrapper .main-title {
+    font-weight: 500;
+    line-height: 50px;
+    margin-bottom: 24px;
+  }
+  
+  .kviz__desc-blocks {
+    margin-bottom: 40px;
+  }
+  
+  .kviz__desc-blocks p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    font-family: Golos, Helvetica, sans-serif;
+  }
+  
+  .kviz__mark-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    margin: 0;
+    line-height: 43px;
+    font-family: Golos, Helvetica, sans-serif;
+    color: #000000;
+  }
+  
+  .kviz__main {
+    margin-bottom: 97px;
+  }
+  
+  .kviz__step-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    font-family: Golos, Helvetica, sans-serif;
+    color: #000000;
+    margin-bottom: 16px;
+  }
+  
+  .kviz__blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .kviz__item {
+    cursor: pointer;
+  }
+  
+  .kviz__blocks .kviz__item {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: Golos, Helvetica, sans-serif;
+    color: #000000;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    -webkit-backdrop-filter: blur(40px);
+            backdrop-filter: blur(40px);
+    padding: 16px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 8px;
+  }
+  
+  .kviz__blocks .kviz__item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .kviz__blocks .kviz__item input {
+    display: none;
+  }
+  
+  .kviz__current {
+    margin-bottom: 32px;
+  }
+  
+  .kviz__current .kviz__item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #E7411B;
+    margin-bottom: 0;
+  }
+  
+  .kviz__current .kviz__item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .kviz__current .kviz__item svg {
+    margin-right: 16px;
+  }
+  
+  .kviz__button {
+    position: relative;
+    margin-top: 24px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-family: Golos, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.5);
+    background: #8E8E8E;
+    -webkit-backdrop-filter: blur(40px);
+            backdrop-filter: blur(40px);
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 24px 43px;
+    -webkit-transition: color .3s ease-in;
+    transition: color .3s ease-in;
+    z-index: 2;
+    cursor: no-drop;
+  }
+  
+  .kviz__button::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 0px;
+    background-color: #E7411B;
+    left: 50%;
+    top: 0;
+    -webkit-transition: width .3s ease-in, left .3s ease-in;
+    transition: width .3s ease-in, left .3s ease-in;
+  }
+  
+  .kviz__button.is-active {
+    cursor: pointer;
+    color: white;
+  }
+  
+  .kviz__button.is-active::before {
+    width: 100%;
+    left: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .kviz__wrapper {
+      padding-left: 164px;
+      padding-right: 164px;
+    }
+    .kviz__wrapper .main-title {
+      font-size: 64px;
+      line-height: 77px;
+      margin-bottom: 32px;
+    }
+    .kviz__main {
+      margin-bottom: 112px;
+    }
+    .kviz__blocks {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+    }
+    .kviz__blocks .kviz__item {
+      width: auto;
+      margin-right: 8px;
+    }
+    .kviz__button {
+      max-width: 290px;
+      width: 100%;
+      padding: 24px;
+    }
+    .kviz__current .kviz__item {
+      margin-bottom: 0;
+    }
+    .kviz__current .kviz__item:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .kviz__wrapper {
+      max-width: 800px;
+      margin: 110px auto 0;
+      padding: 0;
+    }
+    .kviz__wrapper .main-title {
+      font-weight: 500;
+      font-size: 124px;
+      line-height: 130px;
+    }
+    .kviz__mark-title {
+      font-weight: normal;
+      font-size: 48px;
+      line-height: 58px;
+    }
+    .kviz__main {
+      margin-bottom: 140px;
+    }
+    .kviz__desc-blocks {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-bottom: 72px;
+    }
+    .kviz__desc-blocks p {
+      max-width: 392px;
+      width: 100%;
+    }
+    .kviz__blocks {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+    }
+    .kviz__blocks .kviz__item {
+      width: auto;
+      min-width: 256px;
+      padding: 16px;
+      text-align: left;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+    }
+    .kviz__blocks .kviz__item:last-child {
+      margin-bottom: 8px;
+    }
+    .kviz__button {
+      min-width: 392px;
+    }
+    .kviz__current {
+      margin-bottom: 40px;
+    }
+    .kviz__current .kviz__item {
+      margin-bottom: 0;
+    }
+    .kviz__current .kviz__item:last-child {
+      margin-bottom: 0;
+    }
+  }
