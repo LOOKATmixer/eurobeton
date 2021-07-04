@@ -134,6 +134,10 @@ body {
         padding: 0 164px;
     }
 
+    .image__item img {
+        width: 296px;
+    }
+
 
     .data__container {
         margin-bottom: 32px;
