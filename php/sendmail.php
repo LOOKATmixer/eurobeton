@@ -2,12 +2,12 @@
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
 
-    require 'vendor/plugins/PHPMailer/src/Exception.php';
-    require 'vendor/plugins/PHPMailer/src/PHPMailer.php';
+    require '../vendor/plugins/PHPMailer/src/Exception.php';
+    require '../vendor/plugins/PHPMailer/src/PHPMailer.php';
 
     $mail = new PHPMailer(true);
     $mail->CharSet = 'UTF-8';
-    $mail->setLanguage('ru', 'phpmailer/language/');
+    $mail->setLanguage('ru', '../vendor/plugins/phpmailer/language/');
     $mail->IsHTML(true);
 
     //От кого письмо
@@ -43,3 +43,4 @@
 
     header('Content-type: application/json');
     echo json_encode($response);
+?>
