@@ -131,11 +131,11 @@ $(document).ready( function() {
                 kviz.slideUp(200)
                 button.removeClass('is-active')
 
-                let betonVal = beton.text().split(" ")[0];//берем первое значение до пробела в выбранном бетоне
+                let betonLength = beton.text().split(" ").length - 1;
+                let betonVal = beton.text().split(" ")[betonLength];//берем последнее значение в выбранном бетоне
                 if ($('input[data-type="стяжка"]').prop('checked') == true) {
-                    betonVal = beton.text().split(" ")[1] //делим на пробелы
-                    betonVal = betonVal.slice(1)//удаляем первую кавычку
-
+                    betonVal = beton.text().split(" ")[betonLength] //делим на пробелы
+                    betonVal = betonVal.slice(0, -1)//удаляем последнюю кавычку
                     $(inputList).find('input').each( function() {
 
                         if($(this).val() == betonVal) {
@@ -230,9 +230,12 @@ $(document).ready( function() {
                 svg.show()
 
                 $(svg).click(function() {
-                    $(this).closest('.form__input-area').find('input').val("")
+                    $(this).closest('.form__input-area').find('input').val("");
+                    sumBeton = parseInt($(".j-form__price").text()) - parseInt($(".j-delivery-price").text())
+                    $(".j-delivery-price").html("0 ₽");
                     $(this).closest('.form__input-area').removeClass('is-active')
-                    svg.hide()
+                    svg.hide();
+                    $('.j-form__price').text(sumBeton + ' ₽')
                 })
             }
         })
@@ -286,15 +289,6 @@ $(document).ready( function() {
             },
             userName: {
                 required: true,
-            },
-            userBeton: {
-                required: true
-            },
-            userSpace: {
-                required: true
-            },
-            userAdress: {
-                required: true
             }
         },
         messages: {
@@ -304,15 +298,6 @@ $(document).ready( function() {
             },
             userName: {
                 required: "Имя",
-            },
-            userBeton: {
-                required: "Выберите марку бетона",
-            },
-            userSpace: {
-                required: "Выберите объём",
-            },
-            userAdress: {
-                required: "Введите район доставки",
             },
         }
     })

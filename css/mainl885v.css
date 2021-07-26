@@ -497,7 +497,7 @@ label.error {
 .svg-close {
   position: absolute;
   right: 16px;
-  bottom: 10px;
+  bottom: 42px;
   display: none;
 }
 
@@ -541,6 +541,7 @@ label.error {
 @media (min-width: 1025px) {
   .svg-arrow {
     left: 352px;
+    pointer-events: none;
   }
 }
 
@@ -712,6 +713,17 @@ label.error {
   margin-bottom: 32px;
 }
 
+.title__span {
+  font-family: Golos, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 29px;
+  color: #000000;
+  opacity: 0.5;
+  margin: 0;
+}
+
 .calc__answer .calc__answer-block {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -869,6 +881,7 @@ label.error {
             flex-direction: column;
   }
   .form__input-area--calc .form__input-area input {
+    cursor: pointer;
     max-width: 392px;
     margin-right: 152px;
   }
@@ -915,7 +928,7 @@ label.error {
     margin-left: 545px;
     margin-bottom: 0;
     position: relative;
-    top: -39px;
+    /*top: -39px;*/
   }
   .form--calc .form__button-block {
     -webkit-box-ordinal-group: 2;
@@ -945,7 +958,8 @@ label.error {
   
   .calc__answer .calc__answer-block {
     display: grid;
-    grid-template-columns: 256px auto;
+    align-items: center;
+    grid-template-columns: 266px auto;
     grid-gap: 16px;
     margin-bottom: 64px;
   }
@@ -1363,6 +1377,7 @@ label.error {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    align-items: center;
     margin-bottom: 56px;
   }
 
@@ -1400,14 +1415,12 @@ label.error {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+            align-items: center;
   }
   .contact__production-block .contact__sub-text {
     margin-top: 16px;
   }
   .contact__production-block .contact__link {
-    margin-bottom: 0;
-  }
-  .contact__production-block .title {
     margin-bottom: 0;
   }
   .quest__form .title {

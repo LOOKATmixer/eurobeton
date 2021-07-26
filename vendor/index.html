@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="shortcut icon" href="./favicon.ico" />
+  <title>konkrid</title>
+</head>
+
+<body>
+  <header class="header">
+    <a href="./index.html" class="link">
+      <img src="./images/logo.svg" alt="Логотип" class="header__logo" />
+    </a>
+    <nav class="desktop header__menu header__menu_main">
+      <ul class="header__list">
+        <li class="header__list_item"><a href="./pages/calc.html" class="main__menu_item">Калькулятор <br>стоимости</br></a></li>
+        <li class="header__list_item"><a href="./pages/kviz.html" class="main__menu_item">Помощник выбора <br>бетона</br></a></li>
+        <li class="header__list_item"><a href="./pages/price.html" class="main__menu_item">Цены и доставка</a></li>
+<!--        <li class="header__list_item"><a href="./pages/sales.html" class="main__menu_item">Акции и статьи</a></li>-->
+        <li class="header__list_item"><a href="./pages/contacts.html" class="main__menu_item">Контакты</a></li>
+        <li class="header__list_item"><a href="./pages/gallery.html" class="main__menu_item">Галерея</a></li>
+      </ul>
+    </nav>
+    <nav class="mobile header__nav j-header__nav nav">
+      <div class="nav__icon j-nav__icon"><span> </span><span> </span><span></span>
+      </div>
+      <div class="nav__items-wrapper j-nav__items-wrapper">
+        <div class="nav__decoration"></div>
+
+        <ul class="nav__items">
+          <a href="#" class="link">
+            <img src="./images/logo.svg" alt="Логотип" class="header__logo" />
+          </a>
+          <li> <a href="./pages/calc.html" class="main__menu_item">Калькулятор стоимости</a>
+          </li>
+          <li> <a href="./pages/kviz.html" class="main__menu_item">Помощник выбора бетона</a>
+          </li>
+          <li> <a href="./pages/price.html" class="main__menu_item">Цены и доставка</a>
+          </li>
+<!--          <li> <a href="./pages/sales.html" class="main__menu_item">Акции и статьи</a>-->
+<!--          </li>-->
+          <li> <a href="./pages/contacts.html" class="main__menu_item">Контакты</a>
+          </li>
+          <li><a href="./pages/gallery.html" class="main__menu_item">Галерея</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="content">
+      <h1 class="title__main"></h1>
+      <div class="container__number">
+        <div class="icon__info">i
+          <div class="icon__description">
+            Благодаря системам автоматизации и нашему софту, мы, например, можем показать
+            сколько машин бетона уже отгрузили.
+          </div>
+        </div>
+        <div class="main__number">
+          <span id="numbers" class="j-main__number"></span>
+          <span class="main__text">Мы — Конкрид. Наши заводы производят бетон высокого качества по европейским стандартам. Мы используем на наших заводах современное оборудование
+            и системы автоматизации, а также разработали собственный софт для учета и организации производственных процессов.
+          </span>
+      </div>
+      </div>
+    </div>
+  </div>
+  <img src="./images/volvo.png" alt="бетономешалка" class="volvo">
+
+
+  <script src="./vendor/plugins/jquery/3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="./vendor/plugins/jquery/ui/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/header.js"></script>
+</body>
+
+</html>

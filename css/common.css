@@ -20,9 +20,8 @@ html, body {
 }
 
 .footer {
-    /* max-width: 1440px; */
-    margin: 0 auto;
-  }
+  margin: 0 auto;
+}
   
   .footer__img {
     width: 100%;
@@ -125,7 +124,7 @@ html, body {
   .svg-close {
     position: absolute;
     right: 16px;
-    bottom: 10px;
+    bottom: 42px;
     display: none;
   }
   
@@ -169,6 +168,7 @@ html, body {
   @media (min-width: 1024px) {
     .svg-arrow {
       left: 352px;
+      pointer-events: none;
     }
   }
 

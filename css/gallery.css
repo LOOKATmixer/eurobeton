@@ -11,6 +11,8 @@ body {
     padding-top: 44px;
 }
 
+
+
 @media (min-width: 768px) {
     .gallery {
         padding-top: 0;
@@ -50,6 +52,7 @@ body {
 }
 
 .data__item {
+    cursor: pointer;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -122,6 +125,26 @@ body {
     grid-gap: 8px;
 }
 
+.i-big img {
+    height: 296px;
+    width: 528px;
+}
+
+.i-medium img {
+    height: 221px;
+    width: 392px;
+}
+
+.i-small img {
+    height: 144px;
+    width: 264px;
+}
+
+.image__item img {
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
 @media screen and (max-width: 1023px) {
     .images__grid {
         gap: 16px;
@@ -136,6 +159,7 @@ body {
 
     .image__item img {
         width: 296px;
+        height: 250px;
     }
 
 

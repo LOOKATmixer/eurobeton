@@ -26,6 +26,7 @@
 }
 
 .header__list {
+  position: relative;
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -66,6 +67,31 @@
   font-style: normal;
   font-weight: 400;
   line-height: 12px;
+}
+
+.header__phone {
+  position: absolute;
+  right: -161px;
+  top: 86px;
+  transform: rotate(-90deg);
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  color: rgba(231, 65, 27, 1);
+}
+
+.header__phone a {
+  color: rgba(231, 65, 27, 1);
+}
+
+.header__phone-mob {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  color: rgba(231, 65, 27, 1);
 }
 
 /* Мэйн */
@@ -224,4 +250,8 @@
   .container__plug {
     margin: 0px 0 0 8px;
   }
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none !important;
 }

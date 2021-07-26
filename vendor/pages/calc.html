@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Калькулятор стоимости</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="telephone=no" name="format-detection">
+        <meta name="HandheldFriendly" content="true">
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="../css/mainl885v.css" rel="stylesheet" type="text/css">
+        <link href="../index.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+        <meta property="og:title" content="#{data.title}">
+        <meta property="og:title" content="">
+        <meta property="og:url" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:width" content="500">
+        <meta property="og:image:height" content="300">
+        <meta property="twitter:description" content="">
+        <link rel="image_src" href="">
+        <link rel="shortcut icon" href="../favicon.ico" />
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+    </head>
+
+    <body class="page">
+    <header class="header">
+        <a href="../index.html" class="link">
+            <img src="../images/logo.svg" alt="Логотип" class="header__logo" />
+        </a>
+        <nav class="desktop header__menu header__menu_main">
+            <ul class="header__list">
+                <li class="header__list_item"><a href="./calc.html" class="main__menu_item">Калькулятор <br>стоимости</br></a></li>
+                <li class="header__list_item"><a href="./kviz.html" class="main__menu_item">Помощник выбора <br>бетона</br></a></li>
+                <li class="header__list_item"><a href="./price.html" class="main__menu_item">Цены и доставка</a></li>
+<!--                <li class="header__list_item"><a href="./sales.html" class="main__menu_item">Акции и статьи</a></li>-->
+                <li class="header__list_item"><a href="./contacts.html" class="main__menu_item">Контакты</a></li>
+                <li class="header__list_item"><a href="./gallery.html" class="main__menu_item">Галерея</a></li>
+            </ul>
+        </nav>
+        <nav class="mobile header__nav j-header__nav nav">
+            <div class="nav__icon j-nav__icon"><span> </span><span> </span><span></span>
+            </div>
+            <div class="nav__items-wrapper j-nav__items-wrapper">
+                <div class="nav__decoration"></div>
+                <ul class="nav__items">
+                    <a href="#" class="link">
+                        <img src="../images/logo.svg" alt="Логотип" class="header__logo" />
+                    </a>
+                    <li> <a href="./calc.html" class="main__menu_item">Калькулятор стоимости</a>
+                    </li>
+                    <li> <a href="./kviz.html" class="main__menu_item">Помощник выбора бетона</a>
+                    </li>
+                    <li> <a href="./price.html" class="main__menu_item">Цены и доставка</a>
+                    </li>
+<!--                    <li> <a href="./sales.html" class="main__menu_item">Акции и статьи</a>-->
+<!--                    </li>-->
+                    <li> <a href="./contacts.html" class="main__menu_item">Контакты</a>
+                    </li>
+                    <li><a href="./gallery.html" class="main__menu_item">Галерея</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        <main class="main">
+            <section class="calc">
+                <div class="calc__wrapper">
+                    <h1 class="main-title">Калькулятор стоимости</h1>
+                    <h3 class="main-subtitle">Вы можете рассчитать стоимость бетона с помошью калькулятора. Если вы не уверены какой бетон вам нужен, выберите из списка что строите и мы подскажем какой материал вам нужен</h3>
+                    <div class="calc__block">
+                        <form class="form form--calc" action="">
+                            <div class="form__input-block form__input-area--calc">
+                                <div class="form__input-area">
+                                    <input class="form__input--calc j-form__input--calc" type="text" name="userBeton" readonly>
+                                    <svg class="svg-arrow" width="19" height="11" viewbox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.3125 1.375L9.5 9.1875L1.6875 1.375" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg><span class="form__input-placeholder">Марка бетона</span><span class="form__input-price j-beton-price">0 ₽</span>
+                                    <ul class="form__input-list j-form__input-list">
+                                        <li>
+                                            <label>М100 — 3700 ₽/м3
+                                                <input type="radio" name="typeBeton" value="М100" data-cost="3700">
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>М150 — 3800 ₽/м3
+                                                <input type="radio" name="typeBeton" value="М150" data-cost="3800">
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>М200 — 4000 ₽/м3
+                                                <input type="radio" name="typeBeton" value="М200" data-cost="4000">
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>М250 — 4200 ₽/м3
+                                                <input type="radio" name="typeBeton" value="М250" data-cost="4200">
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>М300 — 4350 ₽/м3
+                                                <input type="radio" name="typeBeton" value="М300" data-cost="4350">
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>М350 — 4500 ₽/м3
+                                                <input type="radio" name="typeBeton" value="М350" data-cost="4500">
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>М400 — 4750 ₽/м3
+                                                <input type="radio" name="typeBeton" value="М400" data-cost="4750">
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>ПБ М100 — 3950 ₽/м3
+                                                <input type="radio" name="typeBeton" value="ПБМ100" data-cost="3950">
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>ПБ М150 — 4200 ₽/м3
+                                                <input type="radio" name="typeBeton" value="ПБМ150" data-cost="4200">
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>ПБ М200 — 4450 ₽/м3
+                                                <input type="radio" name="typeBeton" value="ПБМ200" data-cost="4450">
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>ПБ М250 — 4750₽/м3
+                                                <input type="radio" name="typeBeton" value="ПБМ250" data-cost="4750">
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="form__input-area">
+                                    <input type="number" name="userSpace"><span class="form__input-placeholder">Объем, м3</span><span class="form__input-price j-space-price">0 ₽</span>
+                                </div>
+                                <div class="form__input-area">
+                                    <svg class="svg-close" width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.5312 5.46875L5.46875 19.5312" stroke="#E7411B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M19.5312 19.5312L5.46875 5.46875" stroke="#E7411B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                    <input class="j-input-close" type="text" name="userAdress"><span class="form__input-placeholder">Район доставки</span><span class="form__input-price j-delivery-price">0 ₽</span>
+                                </div>
+                            </div>
+                            <div class="form__price-block"> <span>Общая стоимость</span><span class="form__price j-form__price">0 ₽</span>
+                                <span class="form__description form__description--desc">Цена рассчитана по <a class="contacts__list_item-price" href="../price.pdf" target="_blank">прайсу</a>. Дополнительную информацию о стоимости с учетом акций и скидок уточняйте в отделе продаж по&nbspтелефону<a href="tel:+73452515100">+7 (3452) 515-100</a></span>
+                            </div>
+                            <div class="form__button-block"> <span class="form__description">Цена рассчитана по <a class="contacts__list_item-price" href="../price.pdf" target="_blank">прайсу</a>. Дополнительную информацию о стоимости с учетом акций и скидок уточняйте в отделе продаж по телефону<a href="tel:+73452515100">+7 (3452) 515-100</a></span>
+                                <button class="btn btn--orange btn-hover" type="submit">Отправить заявку</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="calc__answer">
+                        <h2 class="title">Почему мы? <span class="title__span">Выбор очевиден</span></h2>
+                        <div class="calc__answer-block">
+                            <h3 class="main-subtitle main-subtitle--wrap">Отгрузка в день заказа</h3>
+                            <p>Время - это большая роскошь в современном мире, зачем откладывать на завтра, если это можно сделать сегодня.</p>
+                        </div>
+                        <div class="calc__answer-block">
+                            <h3 class="main-subtitle">Немецкое оборудование</h3>
+                            <p>Производство бетона осуществляется на бетонном заводе ELBA, гарантия точности дозирования и марки бетона.</p>
+                        </div>
+                        <div class="calc__answer-block">
+                            <h3 class="main-subtitle main-subtitle--wrap">Квалифицированный персонал</h3>
+                            <p>Сотрудники компании имеют опыт работы с бетоном, помогут в выборе марки бетона, рассчитать количество, подобрать необходимую технику для укладки бетонной смеси.</p>
+                        </div>
+                        <div class="calc__answer-block">
+                            <h3 class="main-subtitle main-subtitle--wrap">Техника</h3>
+                            <p>Наличие автобетоносмесителей и автобетононасосов в парке компании, позволяет вовремя доставлять бетон и укладывать в труднодоступные места.</p>
+                        </div>
+                    </div>
+                    <div class="quest__form">
+                        <h2 class="title">Остались вопросы?</h2><span class="quest__sub-text">Пишите, звоните, заходите на кофе. Мы всегда вам рады.</span>
+                        <form id="formContact" class="form" action="">
+                            <div class="form__input-block">
+                                <div class="form__input-area">
+                                    <input type="text" name="userName"><span class="form__input-placeholder">Имя</span>
+                                </div>
+                                <div class="form__input-area">
+                                    <input id="phone" name="userPhone"><span class="form__input-placeholder">Телефон</span>
+                                </div>
+                                <div class="form__input-area form__input-area--textarea">
+                                    <div class="form__textarea">
+                                        <textarea name="userQuestion"></textarea><span class="form__input-placeholder">Вопрос</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__button-block">
+                                <button class="btn btn--orange btn-hover" type="submit">Отправить</button><span class="form__description">Нажимая кнопку “отправить” вы подтверждаете, что ознакомлены и согласны с условиями<a href="#!">политики конфиденциальности</a></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <footer class="footer__wrapper">
+                <div class="footer__img">
+                    <img src="../images/volvo.png" alt="Volvo">
+                </div>
+            </footer>
+        </footer>
+
+        <script src="../vendor/plugins/jquery/3.6.0/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+        <script src="../vendor/plugins/jquery/ui/jquery-ui.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+        <script src="../js/header.js"></script>
+        <script src="../js/form.js"></script>
+    </body>
+
+</html>
