@@ -54,7 +54,7 @@ a {
   width: 977px; /*проверить адапитвность*/
   position: relative;
   color: #E7411B;
-  font-size: 400px;
+  font-size: 376px;
   line-height: 364px;
   font-weight: 500;
   z-index: -1;
@@ -120,7 +120,7 @@ a {
   position: absolute;
   top: -17px;
   color: #000;
-  right: 9px !important;
+  right: -117px !important;
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
@@ -345,7 +345,7 @@ a {
   }
 
   .main__number {
-    font-size: 180px;
+    font-size: 128px;
     line-height: 216px;
     max-width: 320px;
   }
@@ -356,7 +356,7 @@ a {
 
   .main__text {
     width: 290px;
-    top: 159px;
+    top: 148px;
     right: 0 !important;
     padding: 24px;
   }
